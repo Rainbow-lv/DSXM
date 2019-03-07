@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/shape_border"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/circle_header"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            app:roundWithOverlayColor="@android:color/white"
+            app:roundedCornerRadius="8dp" />
+
+        <TextView
+            android:id="@+id/circle_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/circle_header"
+            android:text="小白牛"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/circle_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="2018-09-09 10:11"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cirlce_tvcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="aaa"
+        android:textColor="#666666"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+    <!--<LinearLayout-->
+    <!--android:id="@+id/prise_layout"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_marginRight="14dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:layout_gravity="right"-->
+    <!--android:layout_marginBottom="10dp">-->
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/prise_image"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="20dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="20dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginRight="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:src="@drawable/commonftwo"/>&ndash;&gt;-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/prise_image"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="12sp"-->
+    <!--android:background="@drawable/zan_back"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="#666666"-->
+    <!--android:button="@null"-->
+    <!--android:src="@drawable/ic_launcher_background" />-->
+    <!--<TextView-->
+    <!--android:textSize="@dimen/sp_12"-->
+    <!--android:textColor="#666666"-->
+    <!--android:text="20"-->
+    <!--android:id="@+id/prise_count"-->
+    <!--android:layout_marginRight="24dp"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginTop="25dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/prise_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="24dp"
+            android:text="20"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12" />
+
+        <CheckBox
+            android:id="@+id/prise_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toLeftOf="@id/prise_count"
+            android:background="@drawable/zan_back"
+            android:button="@null"
+            android:src="@drawable/ic_launcher_background" />
+    </RelativeLayout>
+</LinearLayout>

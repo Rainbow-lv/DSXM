@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/jiu_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:placeholderImage="@mipmap/ic_launcher"/>
+    <TextView
+        android:id="@+id/jiu_name"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="aaa"
+        android:gravity="center"/>
+</LinearLayout>

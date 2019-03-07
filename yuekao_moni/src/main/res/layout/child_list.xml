@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="@dimen/dp_10"
+    android:padding="@dimen/dp_10"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/car_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/sim_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/car_check"
+        android:adjustViewBounds="true"
+        android:minHeight="50dp"
+        />
+    <TextView
+        android:id="@+id/text_con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sim_image"
+        android:text="aaa"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bbb"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/sim_image"
+        android:layout_below="@+id/text_con"
+        android:padding="10dp"/>
+
+    <com.lll.yuekao_moni.view.AddSubLayout
+        android:id="@+id/add_sub_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+    </com.lll.yuekao_moni.view.AddSubLayout>
+</RelativeLayout>
